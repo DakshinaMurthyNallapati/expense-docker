@@ -1,5 +1,5 @@
 FROM node:20
-WORDKDIR /opt/backend
+WORKDIR /opt/backend
 COPY package.json .
 COPY *.js .
 RUN npm install
