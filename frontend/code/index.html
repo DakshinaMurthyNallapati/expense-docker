@@ -1,10 +1,10 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Expense App"/><title>React App</title><script defer="defer" src="./static/js/main.bcd36112.js"></script><link href="./static/css/main.b20b6ac4.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html><marquee behavior="scroll" bgcolor="yellow" loop="-1" width="30%">
-    <i>
-       <font color="blue">
-         Today's date is : 
-         <strong>
-          <span id="time"></span>
-         </strong>           
-       </font>
-    </i>
- </marquee>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Expense App"/><title>React App</title><script defer="defer" src="./static/js/main.bcd36112.js"></script><link href="./static/css/main.b20b6ac4.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html><p id="datetime"></p>
+
+<script>
+  // Get current date and time
+  var now = new Date();
+  var datetime = now.toLocaleString();
+
+  // Insert date and time into HTML
+  document.getElementById("datetime").innerHTML = datetime;
+</script>
